@@ -1,0 +1,7 @@
+<h1>Hogwarts Houses</h1>
+
+<% @houses.each do |house| %>
+  <p> Name: <%= house.name() %></p>
+  <p> Crest: <%= house.logo() %></p>
+  <hr>
+<% end %>

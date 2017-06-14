@@ -1,0 +1,26 @@
+<form method="post" action="/students">
+ <label for="first-name">First Name :</label> 
+ <input id="first-name" type="text" name="first_name">
+
+ <label for="last-name" >Last Name:</label>
+ <input id="last-name" type="text" name="last_name">
+
+<!--  <label for="house-select">Which House? </label>
+ <select id="house-select" name="house">
+  <option value="Gryffindor">1 </option>
+  <option value="Ravenclaw">2 </option>
+  <option value="Hufflepuff">4 </option>
+  <option value="Slytherin">3 </option>
+</select> -->
+
+<% @houses.each do |house| %>
+<label for="house-select">Select House</label>
+<select id="house-select" name="<%= house.id %>"><%= house.name %></select>
+<% end %>
+
+<label for="age">Age: </label>
+<input id="age" type="number" name="age">
+
+<input type="Submit" value="Register Student">
+</form>
+
