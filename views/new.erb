@@ -1,3 +1,5 @@
+
+
 <form method="post" action="/students">
  <label for="first-name">First Name :</label> 
  <input id="first-name" type="text" name="first_name">
@@ -13,8 +15,9 @@
   <option value="Slytherin">3 </option>
 </select> -->
 
-<% @houses.each do |house| %>
+
 <label for="house-select">Select House</label>
+<% @houses.each do |house| %>
 <select id="house-select" name="<%= house.id %>"><%= house.name %></select>
 <% end %>
 
