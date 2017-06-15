@@ -42,10 +42,6 @@ class Student
     return result
   end
 
-  # def pretty_name()
-  #   return "#{@first_name} #{@last_name}"
-  # end
-
 
 
 end 

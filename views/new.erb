@@ -17,9 +17,12 @@
 
 
 <label for="house-select">Select House</label>
+<select id="house-select" >
 <% @houses.each do |house| %>
-<select id="house-select" name="<%= house.id %>"><%= house.name %></select>
+<option name="<%= house.id %>"><%= house.name %></option>
 <% end %>
+</select>
+
 
 <label for="age">Age: </label>
 <input id="age" type="number" name="age">

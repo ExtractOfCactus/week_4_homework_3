@@ -2,6 +2,6 @@
 
 <% @houses.each do |house| %>
   <p> Name: <%= house.name() %></p>
-  <p> Crest: <img src=<%=house.logo()%>></p>
+  <p> Crest: <img src=<%=house.logo()%> alt="<%= house.name() %> Crest"></p>
   <hr>
 <% end %>
